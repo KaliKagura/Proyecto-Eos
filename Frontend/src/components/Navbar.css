@@ -1,0 +1,41 @@
+.navbar {
+  position: fixed; /* siempre arriba */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #151e72; /* color de fondo oscuro */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 2rem;
+  z-index: 1000; /* asegura que quede sobre todo */
+}
+
+.navbar-logo h2 {
+  color: #fff;
+  margin: 0;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar-links li a:hover {
+  color: #ffa148; /* efecto hover */
+}
+
+body {
+  margin: 0;
+  padding-top: 70px; /* deja espacio para la barra */
+}
