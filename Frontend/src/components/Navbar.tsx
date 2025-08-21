@@ -14,7 +14,7 @@ const Navbar: React.FC = () => {
           <Link to="/predicciones">Predicciones</Link>
         </li>
         <li>
-          <Link to="/cargar">Subidas</Link>
+          <Link to="/cargar">Subir Archivo</Link>
         </li>
         <li>
           <Link to="/reportes">Reportes</Link>
