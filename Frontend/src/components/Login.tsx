@@ -46,7 +46,7 @@ export default function Login() {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen">
+    <div className="flex items-center justify-center ">
       <div className="max-w-md p-4 border rounded shadow">
         <h2 className="text-xl font-bold mb-4">Iniciar Sesión</h2>
         {mensaje && <p className="mb-2 text-red-500">{mensaje}</p>}

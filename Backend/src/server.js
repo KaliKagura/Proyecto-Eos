@@ -5,6 +5,7 @@ import morgan from "morgan";
 import dotenv from "dotenv";
 import registro from "./routes/Registro.js"; 
 import login from "./routes/Login.js";
+import carga from "./routes/Carga.js";
 
 dotenv.config();
 
@@ -25,6 +26,7 @@ app.get("/", (req, res) => {
 // Rutas
 app.use("/api/register", registro);
 app.use("/api/login", login);
+app.use("/api/carga", carga);
 
 app.listen(port, () => {
   console.log(`✅ Servidor corriendo en http://localhost:${port}`);
