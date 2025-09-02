@@ -65,7 +65,6 @@ const Carga: React.FC = () => {
         </span>
       </label>
 
-      {/* Input oculto */}
       <input
         id="file-upload"
         type="file"

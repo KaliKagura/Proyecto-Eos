@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Inicio from "./components/Inicio";
 import Login from "./components/Login";
 import Registro from "./components/Registro";
 import Carga from "./components/Carga";
@@ -36,7 +37,7 @@ function App() {
         <Navbar />
         <main className="flex-1">
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Inicio />} />
             <Route path="/cargar" element={<Carga />} />
             <Route path="/reportes" element={<Reporte />} />
             <Route path="/predicciones" element={<Predictions />} />
