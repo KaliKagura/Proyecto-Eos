@@ -2,14 +2,14 @@ import React from "react";
 
 const Inicio: React.FC = () => {
   return (
-    <div className="flex flex-col items-center w-full bg-gray-50 gap-6">
+    <div className="flex flex-col items-center w-full bg-gray-100 gap-6">
       {/* Bienvenida + imágenes */}
       <section
         className="w-full bg-cover h-96 flex items-center"
         style={{ backgroundImage: "url('/dawn.jpg')" }}
       >
         <div className="flex justify-between items-center w-full px-10">
-          {/* Texto de bienvenida */}
+          {/* Parte izquierda: Texto de bienvenida */}
           <div className="text-left max-w-4xl">
             <h1 className="text-4xl font-bold text-white mb-4 drop-shadow-2xl">
               Bienvenido a Proyecto Eos
@@ -21,9 +21,9 @@ const Inicio: React.FC = () => {
             </p>
           </div>
 
-          {/* Imágenes de ejemplo */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
-            <div className="rounded-2xl shadow-lg bg-white p-10 flex flex-col items-center">
+          {/* Parte derecha: Imágenes de ejemplo */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6  mt-10">
+            <div className="rounded-2xl shadow-lg bg-white p-10 flex flex-col items-center" onClick={() => { window.location.href = '/cargar'; }}>
               <img
                 src="/Carga.svg"
                 alt="Carga de archivo"
@@ -79,19 +79,19 @@ const Inicio: React.FC = () => {
             </ol>
           </div>
 
-          {/* Lado derecho: botones sobre el fondo de la sección */}
+          {/* Lado derecho: botones */}
           <div className="flex-1 pl-20 flex flex-col justify-start">
             <div className="grid grid-cols-2 gap-10">
-              <button className="bg-blue-600 text-white w-80 h-40 text-3xl rounded-lg hover:bg-blue-700">
+              <button className="bg-blue-600 text-white w-80 h-40 text-3xl rounded-lg hover:bg-blue-700" onClick={() => { window.location.href = '/reportes'; }}>
                 Cargar Archivo
               </button>
-              <button className="bg-green-600 text-white w-80 h-40 text-3xl rounded-lg hover:bg-green-700">
+              <button className="bg-green-600 text-white w-80 h-40 text-3xl rounded-lg hover:bg-green-700" onClick={() => { window.location.href = '/reportes'; }}>
                 Ver Reportes
               </button>
-              <button className="bg-purple-600 text-white w-80 h-40 text-3xl rounded-lg hover:bg-purple-700">
+              <button className="bg-purple-600 text-white w-80 h-40 text-3xl rounded-lg hover:bg-purple-700" onClick={() => { window.location.href = '/reportes'; }}>
                 Analizar Datos
               </button>
-              <button className="bg-orange-500 text-white w-80 h-40 text-3xl rounded-lg hover:bg-orange-600">
+              <button className="bg-orange-500 text-white w-80 h-40 text-3xl rounded-lg hover:bg-orange-600" onClick={() => { window.location.href = '/auth'; }}>
                 Iniciar Sesion
               </button>
             </div>

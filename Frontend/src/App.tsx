@@ -1,22 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Inicio from "./pages/Inicio";
+import AuthPage from "./pages/Auth";
+import Reporte from "./pages/reportes";
 import Navbar from "./components/Navbar";
-import Inicio from "./components/Inicio";
-import Login from "./components/Login";
-import Registro from "./components/Registro";
-import Carga from "./components/Carga";
-import Reporte from "./components/Reporte";
-
-function Home() {
-  return (
-    <div className="text-white p-6">
-      <h1 className="text-2xl font-bold mb-4">Inicio</h1>
-      <p>
-        Bienvenido a Eos: plataforma para cargar, validar y analizar ventas con
-        predicciones.
-      </p>
-    </div>
-  );
-}
 
 function Predictions() {
   return (
@@ -38,11 +24,9 @@ function App() {
         <main className="flex-1">
           <Routes>
             <Route path="/" element={<Inicio />} />
-            <Route path="/cargar" element={<Carga />} />
+            <Route path="/auth" element={<AuthPage />} />
             <Route path="/reportes" element={<Reporte />} />
             <Route path="/predicciones" element={<Predictions />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/register" element={<Registro />} />
           </Routes>
         </main>
       </div>

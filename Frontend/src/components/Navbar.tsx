@@ -5,7 +5,7 @@ import "./navbar.css"; // 👈 aquí usas tu CSS personalizado
 const Navbar: React.FC = () => {
   return (
     <nav className="navbar">
-      <div className="navbar-logo">Proyecto EOS</div>
+      <div className="navbar-logo text-2xl font-bold" onClick={() => {window.location.href = '/'; }}>EOS 😈</div>
       <ul className="navbar-links">
         <li>
           <Link to="/">Inicio</Link>
@@ -14,16 +14,10 @@ const Navbar: React.FC = () => {
           <Link to="/predicciones">Predicciones</Link>
         </li>
         <li>
-          <Link to="/cargar">Subir Archivo</Link>
-        </li>
-        <li>
           <Link to="/reportes">Reportes</Link>
         </li>
         <li>
-          <Link to="/login">Login</Link>
-        </li>
-        <li>
-          <Link to="/register">Registro</Link>
+          <Link to="/auth">Iniciar Sesión</Link>
         </li>
       </ul>
     </nav>
